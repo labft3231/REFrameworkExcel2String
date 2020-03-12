@@ -5,7 +5,7 @@
 
 
 #### 시작하기 전 바꿔야할 부분
-''' TransactionItem은 기본적으로 QueueItem datatype을 가지고 있다. 이를 String으로 활용하기 위해서 메인에서 
+TransactionItem은 기본적으로 QueueItem datatype을 가지고 있다. 이를 String으로 활용하기 위해서 메인에서 
 datatype을 String으로 하나하나 바꿔준 후 오류가 나는 부분을 하나하나 바꿔줘야한다. 앞에 말한거 처럼 Queue로 
 되어 있기 때문에 기본적으로 큐 데이터를 읽어온다든가 큐를 활용한 것들은 그냥 주석처리(ctrl + d) 하거나 
 지워버리면 된다. 

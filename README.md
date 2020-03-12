@@ -13,17 +13,24 @@ datatype을 String으로 하나하나 바꿔준 후 오류가 나는 부분을 �
 
 #### 1. GetTransactionData
 ```
+
  - TransactionNumber가 1인 경우는 트랜젝션이 처음 도는 경우이다. 프로젝트를 처음 intialize할때 데이터를 저장해도
  되지만 여기서 해도 상관없다.
+ 
  - Excel 파일을 읽어 DataTable을 가져온다.
+ 
  - DataTable의 .Rows.Item(in_TransactionNumber-1).ToString 을 통해 String type의 TransactionItem에 저장해준다.
+ 
  - 현재의 트랜젝션 번호인 TransactionNumber 값 보다 가져온 DataTable의 row 수가 작다면 out_Transaction을 
  .Rows.Item(in_TransactionNumber-1).ToString 으로 크다면 datatable을 넘어섰다는 의미가 되므로 out_transaction은 
  할게 없으니 Nothing으로 바꿔준다.
+ 
 ```
 
 #### 2. Process
 ```
+
  - in_TransactionItem string 이므로 상황에 맞는 data type으로 가공하여 그냥 쓰면 된다.
+ 
 ```
  
